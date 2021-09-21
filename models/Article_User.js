@@ -21,9 +21,15 @@ const ArticleSchema = new mongoose.Schema({
   doi: {
     type: String
   },
-  evidence: {
+  sepractice: {
+    type: String
+  },
+  type_of_evidence: {
+    type: String
+  },
+  participant_type: {
     type: String
   }
 });
 
-module.exports = Article = mongoose.model('article', ArticleSchema);
+module.exports = Article = mongoose.model('article_user', ArticleSchema);

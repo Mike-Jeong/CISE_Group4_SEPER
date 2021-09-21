@@ -4,7 +4,8 @@ const express = require('express');
 const connectDB = require('./config/db');
 var cors = require('cors');
 
-const articles = require('./routes/api/articles')
+const userarticles = require('./routes/api/userarticles')
+const moderarticles = require('./routes/api/moderarticles')
 const app = express();
 
 connectDB();
@@ -19,7 +20,8 @@ app.use(express.json({ extended: false }));
 app.get('/', (req, res) => res.send('Hello world!'));
 
 // use Routes
-app.use('/api/articles', articles);
+app.use('/api/userarticles', userarticles);
+app.use('/api/moderarticles', moderarticles);
 
 
 

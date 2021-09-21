@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const Article = require('../../models/Article');
+const Article = require('../../models/Article_Moderator');
 
 // @route GET api/test
 router.get('/test', (req, res) => res.send('article route testing!'));

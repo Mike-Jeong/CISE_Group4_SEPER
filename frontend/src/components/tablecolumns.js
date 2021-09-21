@@ -16,10 +16,13 @@ const tablecolumns = [
       accessor: 'doi'
     },,{
       Header: 'Claimed Benefit',
-      accessor: 'claim'
+      accessor: 'sepractice'
     },{
       Header: 'Level of Evidence',
-      accessor: 'evidence'
+      accessor: 'type_of_evidence'
+    },{
+      Header: 'Level of Evidence',
+      accessor: 'participant_type'
     }
   ]
 
