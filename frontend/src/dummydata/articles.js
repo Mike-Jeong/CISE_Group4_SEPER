@@ -2,7 +2,7 @@ import axios from 'axios';
 
 var articles = []
 
-axios.get('http://localhost:5000/api/userarticles')
+axios.get('/api/userarticles')
 
 .then(res => {
 
