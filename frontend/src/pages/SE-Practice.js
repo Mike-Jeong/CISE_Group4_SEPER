@@ -12,7 +12,7 @@ const SEPractice = () => {
 
   const [articles, setArticles] = useState([]);
   
-  axios.get("http://localhost:5000/api/userarticles")
+  axios.get("/api/userarticles")
     .then(res => {
       setArticles(res.data);
     })

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const SubmissionForm = () => {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
-  const onSubmit = (data) => axios.post('http://localhost:5000/api/userarticles', data)
+  const onSubmit = (data) => axios.post('/api/userarticles', data)
     .catch(err => {
     console.log("Error in Create!");
   })
