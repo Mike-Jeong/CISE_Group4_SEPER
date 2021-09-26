@@ -18,7 +18,7 @@ const tablecolumns = [
       Header: 'Claimed Benefit',
       accessor: 'sepractice'
     },{
-      Header: 'Level of Evidence',
+      Header: 'Type of Evidence',
       accessor: 'type_of_evidence'
     },{
       Header: 'Level of Evidence',
