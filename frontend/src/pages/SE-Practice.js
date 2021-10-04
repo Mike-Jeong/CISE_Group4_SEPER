@@ -28,6 +28,7 @@ const SEPractice = () => {
         <option value="">Select an SE Practice </option>
 
         <Dropdown/>
+        <br/>
         <Styles>
         <Table
         data= {articles}
