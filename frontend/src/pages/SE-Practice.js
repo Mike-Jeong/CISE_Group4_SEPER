@@ -12,15 +12,17 @@ const SEPractice = () => {
 
   const [articles, setArticles] = useState([]);
   
-  axios.get("/api/userarticles")
+  if (articles.length == 0) {
+
+    axios.get("/api/userarticles")
     .then(res => {
       setArticles(res.data);
     })
     .catch(err =>{
       console.log('Error in SE-Practice');
     })
-
-
+    
+  }
 
     return (
       <div>
