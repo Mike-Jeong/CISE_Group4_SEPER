@@ -19,10 +19,13 @@ const SEPractice = () => {
       setArticles(res.data);
     })
     .catch(err =>{
-      console.log('Error in SE-Practice');
+      console.log('Error in SE-Practice: Cannot fetch data from database.');
     })
+<<<<<<< HEAD
     
   }
+=======
+>>>>>>> 8252370f1fd2eca6f3dfd42f162c071a80f15199
 
     return (
       <div>
@@ -30,6 +33,7 @@ const SEPractice = () => {
         <option value="">Select an SE Practice </option>
 
         <Dropdown/>
+        <br/>
         <Styles>
         <Table
         data= {articles}
@@ -38,6 +42,8 @@ const SEPractice = () => {
         </Styles>
       </div>
     );
+
+    
 }
  
 export default SEPractice;  
