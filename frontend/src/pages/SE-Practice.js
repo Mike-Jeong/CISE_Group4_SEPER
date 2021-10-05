@@ -17,10 +17,8 @@ const SEPractice = () => {
       setArticles(res.data);
     })
     .catch(err =>{
-      console.log('Error in SE-Practice');
+      console.log('Error in SE-Practice: Cannot fetch data from database.');
     })
-
-
 
     return (
       <div>
@@ -37,6 +35,8 @@ const SEPractice = () => {
         </Styles>
       </div>
     );
+
+    
 }
  
 export default SEPractice;  
