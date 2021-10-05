@@ -38,7 +38,7 @@ const SEPractice = () => {
       </div>
     );
 
-
+}
 }
  
 export default SEPractice;  
