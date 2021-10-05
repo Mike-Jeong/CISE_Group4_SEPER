@@ -21,11 +21,6 @@ const SEPractice = () => {
     .catch(err =>{
       console.log('Error in SE-Practice: Cannot fetch data from database.');
     })
-<<<<<<< HEAD
-    
-  }
-=======
->>>>>>> 8252370f1fd2eca6f3dfd42f162c071a80f15199
 
     return (
       <div>
@@ -43,7 +38,7 @@ const SEPractice = () => {
       </div>
     );
 
-    
+
 }
  
 export default SEPractice;  
