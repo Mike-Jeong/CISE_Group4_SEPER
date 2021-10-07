@@ -9,6 +9,6 @@ const SubmitArticle = () =>  {
             <SubmissionForm/>
         </div>
     );
-} 
+}
  
 export default SubmitArticle;

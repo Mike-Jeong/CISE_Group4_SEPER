@@ -15,11 +15,11 @@ const SubmissionForm = () => {
 
     <form onSubmit={handleSubmit(onSubmit)}>
     
-      <input {...register("title")} placeholder="Title" />
-      <p><input {...register("authors")} placeholder="Authors" /></p>
-      <p><input {...register("source")} placeholder="Source" /></p> 
-      <p><input {...register("pubyear")} placeholder="Publication Year" /></p>
-      <p><input {...register("doi")} placeholder="DOI" /></p>
+      <input {...register("title")} placeholder="Title" required/>
+      <p><input {...register("authors")} placeholder="Authors" required/></p>
+      <p><input {...register("source")} placeholder="Source" required/></p> 
+      <p><input {...register("pubyear")} placeholder="Publication Year" required/></p>
+      <p><input {...register("doi")} placeholder="DOI" required/></p>
      
       <p> <select {...register("sepractice")}>
         <option value="">Select SE practice...</option>
@@ -41,13 +41,11 @@ const SubmissionForm = () => {
       </select></p>
 
       <p>{result}</p>
-      <input type="submit" onclick="show_alert();"/>
+      <input type="submit"/>
     </form>
+    
   );
 
-function show_alert() {
-  alert("Thank You for your Submission!");
-}
 
 }
 export default SubmissionForm;
