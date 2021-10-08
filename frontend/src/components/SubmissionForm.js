@@ -15,7 +15,6 @@ const SubmissionForm = () => {
   })
 
   return (
-
     <form onSubmit={handleSubmit(onSubmit)}>
     
       <input {...register("title")} placeholder="Title" required/>
@@ -44,10 +43,8 @@ const SubmissionForm = () => {
       </select></p>
 
       <p>{result}</p>
-      <input id="button" type="submit"/>
+      <input type="submit" />
     </form>
   );
-
-
 }
 export default SubmissionForm;
