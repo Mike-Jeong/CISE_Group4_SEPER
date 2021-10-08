@@ -12,6 +12,7 @@ const SubmissionForm = () => {
   })
 
   return (
+
     <form onSubmit={handleSubmit(onSubmit)}>
     
       <input {...register("title")} placeholder="Title" />
@@ -40,8 +41,13 @@ const SubmissionForm = () => {
       </select></p>
 
       <p>{result}</p>
-      <input type="submit" />
+      <input type="submit" onclick="show_alert();"/>
     </form>
   );
+
+function show_alert() {
+  alert("Thank You for your Submission!");
+}
+
 }
 export default SubmissionForm;
