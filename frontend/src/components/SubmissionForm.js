@@ -7,7 +7,10 @@ const SubmissionForm = () => {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
   const onSubmit = (data) => axios.post('/api/userarticles', data)
-    .catch(err => {
+  .then(res => {
+    alert("Thank you for your submission! A moderator will assess your submitted practice as soon as possible.");
+  })
+  .catch(err => {
     console.log("Error in Create!");
   })
 
@@ -41,9 +44,8 @@ const SubmissionForm = () => {
       </select></p>
 
       <p>{result}</p>
-      <input type="submit"/>
+      <input id="button" type="submit"/>
     </form>
-    
   );
 
 
