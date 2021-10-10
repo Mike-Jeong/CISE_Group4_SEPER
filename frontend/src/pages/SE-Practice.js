@@ -23,8 +23,6 @@ class SEPractice extends React.Component{
         console.log("Error in SE-Practice: Cannot fetch data from database.");
       });
 
-
-
     this.handlePractice = this.handlePractice.bind(this);
   }
 
@@ -56,8 +54,6 @@ class SEPractice extends React.Component{
     }
 
   }
-
-  
 
   render(){return (
     <div>
