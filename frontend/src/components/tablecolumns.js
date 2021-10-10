@@ -21,7 +21,7 @@ const tablecolumns = [
       Header: 'Type of Evidence',
       accessor: 'type_of_evidence'
     },{
-      Header: 'Level of Evidence',
+      Header: 'Participant Type',
       accessor: 'participant_type'
     }
   ]
