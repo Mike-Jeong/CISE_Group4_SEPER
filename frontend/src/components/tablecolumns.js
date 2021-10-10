@@ -15,7 +15,7 @@ const tablecolumns = [
       Header: 'DOI',
       accessor: 'doi'
     },,{
-      Header: 'Claimed Benefit',
+      Header: 'SE Practice Type',
       accessor: 'sepractice'
     },{
       Header: 'Type of Evidence',
