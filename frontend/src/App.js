@@ -14,38 +14,30 @@ const App = () =>  {
 
   var CurrentPage;
   var CurrentNav;
-  
-  if(window.location.pathname === "/"){
-    CurrentPage = Home;
-    CurrentNav = "/";
+
+  switch(window.location.pathname){
+    case "/":
+      CurrentPage = Home;
+      CurrentNav = "/";
+      break;
+    case "/SEPractice":
+      CurrentPage = SEPractice;
+      CurrentNav = "/SEPractice";
+      break;
+    case "/SubmitArticle":
+      CurrentPage = SubmitArticle;
+      CurrentNav = "/SubmitArticle";
+      break;
+    case "/404":
+      CurrentPage = NotFoundPage;
+      CurrentNav = "/404";
+      break;
+    default:
+      CurrentPage = NotFoundPage;
+      CurrentNav = "/404";
+      window.location.pathname = "/404";
   }
 
-  else if(window.location.pathname === "/SEPractice"){
-    CurrentPage = SEPractice;
-    CurrentNav = "/SEPractice";
-  }
-
-  else if(window.location.pathname === "/SubmitArticle"){
-    CurrentPage = SubmitArticle;
-    CurrentNav = "/SubmitArticle";
-  }
-
-  else if(window.location.pathname === "/SubmitArticle"){
-    CurrentPage = SubmitArticle;
-    CurrentNav = "/SubmitArticle";
-  }
-
-  else if(window.location.pathname === "/404"){
-    CurrentPage = NotFoundPage;
-    CurrentNav = "/404";
-  }
-
-  else{
-    CurrentPage = NotFoundPage;
-    CurrentNav = "/404";
-    window.location.pathname = "/404"
-  }
-  
     return (
         <Router forceRefresh>
         <div>
@@ -60,7 +52,7 @@ const App = () =>  {
           </div>
         </div>
         </Router>   
-    )
-    
+    )    
+
 }
 export default App;
