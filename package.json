@@ -30,6 +30,7 @@
     "concurrently": "^6.2.1",
     "config": "^3.3.6",
     "cors": "^2.8.5",
+    "eslint-config-react-app": "^6.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.4",
     "validation": "0.0.1"
