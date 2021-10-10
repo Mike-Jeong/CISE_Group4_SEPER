@@ -1,9 +1,3 @@
-const abc 
+const abc = 0;
 
-= 0 
-
-
-console. 
-log(abc)
-
-
+console.log(abc);

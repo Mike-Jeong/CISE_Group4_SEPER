@@ -10,7 +10,7 @@
     "dev:client": "cd frontend && npm start",
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"No test specified\"",
+    "test": "echo \"Error:No test specified\"&& exit 1",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "eslint-config-react-app": "^6.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.4",
+    "test": "^0.6.0",
     "validation": "0.0.1"
   },
   "devDependencies": {
