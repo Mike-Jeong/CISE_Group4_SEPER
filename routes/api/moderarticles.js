@@ -20,6 +20,14 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(404).json({ noarticlefound: 'No Article found' }));
 });
 
+// @route GET api/articles/:
+router.get('/:sepractice', (req, res) => {
+  let typeRequest = req.params.sepractice;
+  Article.find({"sepractice": {$eq: typeRequest}})
+  .then(article => res.json(article))
+  .catch(err => res.status(404).json({ noarticlefound: 'No Article found' }));
+});
+
 
 router.post('/', (req, res) => {
     Article.create(req.body)

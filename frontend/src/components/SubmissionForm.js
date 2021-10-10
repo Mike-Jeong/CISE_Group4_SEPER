@@ -7,23 +7,26 @@ const SubmissionForm = () => {
   const { register, handleSubmit } = useForm();
   const [result, setResult] = useState("");
   const onSubmit = (data) => axios.post('/api/userarticles', data)
-    .catch(err => {
+  .then(res => {
+    alert("Thank you for your submission! A moderator will assess your submitted practice as soon as possible.");
+  })
+  .catch(err => {
     console.log("Error in Create!");
   })
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
     
-      <input {...register("title")} placeholder="Title" />
-      <p><input {...register("authors")} placeholder="Authors" /></p>
-      <p><input {...register("source")} placeholder="Source" /></p> 
-      <p><input {...register("pubyear")} placeholder="Publication Year" /></p>
-      <p><input {...register("doi")} placeholder="DOI" /></p>
+      <input {...register("title")} placeholder="Title" required/>
+      <p><input {...register("authors")} placeholder="Authors" required/></p>
+      <p><input {...register("source")} placeholder="Source" required/></p> 
+      <p><input {...register("pubyear")} placeholder="Publication Year" required/></p>
+      <p><input {...register("doi")} placeholder="DOI" required/></p>
      
       <p> <select {...register("sepractice")}>
         <option value="">Select SE practice...</option>
         <option value="TDD">TDD</option>
-        <option value="Mob Programming">Mob Programming</option>
+        <option value="Mob-Programming">Mob Programming</option>
       </select></p>
 
       <p> <select {...register("type_of_evidence")}>
