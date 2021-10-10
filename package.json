@@ -10,7 +10,7 @@
     "dev:client": "cd frontend && npm start",
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"Error:No test specified\"&& exit 1",
+    "test": "echo \"No test specified\"",
     "precommit": "lint-staged"
   },
   "repository": {
