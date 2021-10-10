@@ -10,7 +10,8 @@
     "dev:client": "cd frontend && npm start",
     "start": "node app.js",
     "app": "nodemon app.js",
-    "test": "echo \"No test specified\""
+    "test": "echo \"No test specified\"",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -58,7 +59,8 @@
   "lint-staged": {
     "*.js": [
       "eslint --fix",
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   }
 }
