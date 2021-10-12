@@ -22,6 +22,14 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
+ul.btn-nav{
+  color: #FFF;
+  display: inline-block;
+  width: 66px;
+  align-items : right;
+}
+
 .content {
   background-color: rgb(255, 255, 255);
   padding: 20px;

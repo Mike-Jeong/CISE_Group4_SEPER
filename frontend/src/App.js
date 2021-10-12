@@ -46,6 +46,12 @@ const App = () =>  {
               <li><NavLink exact to = "/" >Home</NavLink></li>
               <li><NavLink to = "/SEPractice" >Select the Practice</NavLink></li>
               <li><NavLink to = "/SubmitArticle" >Submit an Article</NavLink></li>
+
+              <div class="btn-nav">
+               <div class="Moderator"></div>
+               <div class="Analyst"></div>
+               <div class="Administrator"></div>
+               </div>
             </ul>
           <div className="content">
             <Route exact path={CurrentNav} component={CurrentPage}/>
