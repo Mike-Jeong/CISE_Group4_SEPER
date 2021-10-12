@@ -1,5 +1,3 @@
-// models/Article_Moderator.js
-
 const mongoose = require('mongoose');
 
 const ArticleSchema = new mongoose.Schema({
@@ -23,7 +21,7 @@ const ArticleSchema = new mongoose.Schema({
   },
   claim: {
     type: String
-  },  
+  },
   evidence: {
     type: String
   },
