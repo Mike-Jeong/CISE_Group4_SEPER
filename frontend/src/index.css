@@ -3,7 +3,7 @@ body {
   padding: 20px;
   margin: 0;
 }
-h1, h2, h3, p, ul, li {
+h1, h2, h3, p, ul, li, btn {
   font-family: Helvetica, sans-serif;
 }
 ul.header li {
@@ -23,11 +23,9 @@ ul.header li a {
   display: inline-block;
 }
 
-ul.btn-nav{
+ul.header btn{
   color: #FFF;
   display: inline-block;
-  width: 66px;
-  align-items : right;
 }
 
 .content {
