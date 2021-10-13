@@ -23,11 +23,12 @@ ul.header li a {
   display: inline-block;
 }
 
-ul.btn-nav{
-  color: #FFF;
+.dropmenu {
+
+  position: relative;
+  left: 1300px;
   display: inline-block;
-  width: 66px;
-  align-items : right;
+  background-color: rgb(255, 255, 255);
 }
 
 .content {
