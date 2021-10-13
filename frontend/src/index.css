@@ -3,7 +3,7 @@ body {
   padding: 20px;
   margin: 0;
 }
-h1, h2, h3, p, ul, li, btn {
+h1, h2, h3, p, ul, li {
   font-family: Helvetica, sans-serif;
 }
 ul.header li {
@@ -23,9 +23,12 @@ ul.header li a {
   display: inline-block;
 }
 
-ul.header btn{
-  color: #FFF;
+.dropmenu {
+
+  position: relative;
+  left: 1300px;
   display: inline-block;
+  background-color: rgb(255, 255, 255);
 }
 
 .content {

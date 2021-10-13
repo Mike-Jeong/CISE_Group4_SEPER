@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import SEPractice from "./pages/SE-Practice";
 import SubmitArticle from "./pages/Submit-Article";
 import NotFoundPage from "./pages/404";
+import Dropdownmenu from "./components/Dropdownmenu";
 
 const App = () =>  {
 
@@ -42,16 +43,13 @@ const App = () =>  {
         <Router forceRefresh>
         <div>
           <h1>Software Engineering Practice Evidence Repository (SEPER)</h1>
+          <div className="dropmenu">
+            <Dropdownmenu onClick/>
+             </div>
             <ul className="header">
               <li><NavLink exact to = "/" >Home</NavLink></li>
               <li><NavLink to = "/SEPractice" >Select the Practice</NavLink></li>
               <li><NavLink to = "/SubmitArticle" >Submit an Article</NavLink></li>
-
-               <btn><div class="btn-nav">
-               <div class="Moderator"></div>
-               <div class="Analyst"></div>
-               <div class="Administrator"></div>
-               </div> </btn>
             </ul>
           <div className="content">
             <Route exact path={CurrentNav} component={CurrentPage}/>
