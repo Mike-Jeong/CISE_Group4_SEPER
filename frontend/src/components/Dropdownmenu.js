@@ -1,44 +1,41 @@
 import React from 'react';
+import { useState } from 'react';
 
-class Dropdownmenu extends React.Component{
-  constructor() {
-    super();
+
+
+
+this.showMenu = this.showMenu.bind(this);
+this.closeMenu = this.closeMenu.bind(this);
+
     
-    this.state = {
-      showMenu: false,
-    };
-    
-    this.showMenu = this.showMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
-  }
+   
   
-  showMenu(event) {
-    event.preventDefault();
+const showMenu = (e) =>  {
+    e.preventDefault();
     
     this.setState({ showMenu: true }, () => {
       document.addEventListener('click', this.closeMenu);
     });
-  }
   
-  closeMenu(event) {
+  
+  const closeMenu = (e) => {
     
-    if (!this.dropdownMenu.contains(event.target)) {
+    if (!this.dropdownMenu.contains(e.target)) {
       
       this.setState({ showMenu: false }, () => {
         document.removeEventListener('click', this.closeMenu);
       });  
       
-    }
-  }
+    } }
 
-  render() {
+  
     return (
       <div>
         <button onClick={this.showMenu}>
           Show menu
         </button>
         {
-          this.state.showMenu
+          this.showMenu
             ? (
               <div
                 className="menu"
@@ -57,7 +54,8 @@ class Dropdownmenu extends React.Component{
         }
       </div>
     );
-  }
+  
 }
 
+// eslint-disable-next-line no-undef
 export default Dropdownmenu;
