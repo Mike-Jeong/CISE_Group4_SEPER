@@ -65,5 +65,9 @@
       "prettier --write",
       "git add"
     ]
+  },
+  "engines": {
+    "node": "<=14.x.x",
+    "npm": "<=6.x.x"
   }
 }
